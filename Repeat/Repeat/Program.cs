@@ -10,14 +10,17 @@ namespace RepeatUebung
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter your text: ");
-            string userText = Console.ReadLine();
+            Console.WriteLine("Please enter a decimal number: ");
+            double z1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Please enter another decimal number: ");
+            double z2 = Convert.ToDouble(Console.ReadLine());
 
-            int textlenght = userText.Length;
+            double s = z1 + z2;
             Console.Clear();
-            Console.WriteLine($"The text you entered is: {userText}");
-            Console.WriteLine("------------------------------------------");
-            Console.WriteLine($"The length of the text is {textlenght}!");
+
+            Console.WriteLine($"The numbers ypu entered were {z1} and {z2}.");
+            Console.WriteLine("------------------------------------------------");
+            Console.WriteLine($"The solution is: {s}!");
 
             Console.ReadKey();
 
