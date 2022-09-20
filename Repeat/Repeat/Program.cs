@@ -10,14 +10,14 @@ namespace RepeatUebung
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter a text: ");
-            string ut = Console.ReadLine();
-            string t = ut.PadRight(30, 'y');
-
+            Console.WriteLine("Please enter a text containing spaces: ");
+            string t = Console.ReadLine();
+            string mt = t.Trim(' ');
             Console.Clear();
 
-            Console.WriteLine($"The text u entered was: {ut}");
-            Console.WriteLine($"The modified text is: {t}");
+            Console.WriteLine($"This is the text you entered: {t}");            
+            Console.WriteLine("------------------------------------------------------------");            
+            Console.WriteLine($"This is your text without spaces in front & behind it: {mt}");
 
             Console.ReadKey();
 
