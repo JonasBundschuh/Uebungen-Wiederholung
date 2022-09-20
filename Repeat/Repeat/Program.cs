@@ -10,10 +10,13 @@ namespace RepeatUebung
     {
         static void Main(string[] args)
         {
-            int z1 = 5;
-            int z2 = 10;
+            Console.WriteLine("Choose your first number: ");
+            int z1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Choose your second number: ");
+            int z2 = Convert.ToInt32(Console.ReadLine());
             double ergebnis = z1 + z2;
-            Console.WriteLine(ergebnis);
+            Console.Clear();
+            Console.WriteLine($"Das ergebnis ist {ergebnis}!");
 
             Console.ReadKey();
         }
