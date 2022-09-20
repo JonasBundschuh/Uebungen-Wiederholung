@@ -10,16 +10,8 @@ namespace RepeatUebung
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter a text containing spaces: ");
-            string t = Console.ReadLine();
-            string mt = t.Trim(' ');
-            Console.Clear();
-
-            Console.WriteLine($"This is the text you entered: {t}");            
-            Console.WriteLine("------------------------------------------------------------");            
-            Console.WriteLine($"This is your text without spaces in front & behind it: {mt}");
-
-            Console.ReadKey();
+            Console.WriteLine("Please enter a text containing ';': ");
+            string t = t.Split(';', [0]);
 
         }
 
