@@ -10,15 +10,13 @@ namespace RepeatUebung
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Choose your first number: ");
-            int z1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Choose your second number: ");
-            int z2 = Convert.ToInt32(Console.ReadLine());
-            double ergebnis = z1 + z2;
-            Console.Clear();
-            Console.WriteLine($"Das ergebnis ist {ergebnis}!");
+            Console.WriteLine("Please enter your text: ");
+            string userText = Console.ReadLine();
 
-            Console.ReadKey();
+            string moddedText = userText.Replace("U", "G").Replace("u", "g");
+            Console.WriteLine($"The old text was: {userText}");
+            Console.WriteLine($"The neew text is {moddedText}");
+
         }
 
 
