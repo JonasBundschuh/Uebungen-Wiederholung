@@ -12,7 +12,7 @@ namespace RepeatUebung
         {
             Console.WriteLine("Please enter a text: ");
             string ut = Console.ReadLine();
-            string t = ut.PadLeft(20, 'y');
+            string t = ut.PadRight(30, 'y');
 
             Console.Clear();
 
